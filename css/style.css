@@ -1,0 +1,393 @@
+/* ===============================
+   VARIABLES
+================================ */
+
+:root {
+    --primary: #2c3e50;
+    --accent: #c97b63;
+    --light: #f4f4f4;
+    --text: #333;
+
+    --blue-section: #0a66c2;
+    --green-section: #2e8b57;
+
+    --spacing: 1.5rem;
+    --max-width: 75rem;
+}
+
+/* ===============================
+   SECTION COLOR LOGIC
+================================ */
+
+.blue {
+    color: var(--blue-section);
+}
+
+.green {
+    color: var(--green-section);
+}
+
+.experience {
+    color: var(--accent);
+}
+
+/* ===============================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'raleway', sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+
+.cv {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 3rem auto;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.cv-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    margin-bottom: 3rem;
+}
+
+.header-left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.photo img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.identity h1 span {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.identity h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: end;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.identity h2 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    text-transform: capitalize;
+    text-align: end;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    letter-spacing: 0.12rem;
+}
+
+.contact {
+    list-style: none;
+    text-align: end;
+    font-size: 0.9rem;
+}
+
+.header-right {
+    background: var(--light);
+    gap: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    justify-content: end;
+}
+
+.social-btn {
+    padding: 0.4rem 0.9rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+    width: 180px;
+}
+
+.linkedin {
+    background: #0a66c2;
+}
+
+.github {
+    background: #333;
+}
+
+/* ===============================
+   CONTENT GRID
+================================ */
+
+.cv-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.left-column,
+.right-column {
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+article h4 {
+    font-weight: 600;
+}
+
+article span {
+    color: var(--accent);
+    opacity: 0.5;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: gray;
+}
+
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p,
+li,
+a {
+    font-weight: 300;
+}
+
+
+li {
+    list-style: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.lang-pass {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.padding {
+    padding: 3rem 1.5rem 0;
+}
+
+.bloc-lang-pass {
+    background: var(--light);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+}
+
+
+/* ===============================
+   SECTION COLORS
+================================ */
+
+.blue h3 {
+    color: var(--blue-section);
+}
+
+.green h3 {
+    color: var(--green-section);
+}
+
+.right-column h3 {
+    color: var(--accent);
+}
+
+/* ===============================
+   SECTION COLORS
+================================ */
+
+.blue h3 {
+    color: var(--blue-section);
+}
+
+.green h3 {
+    color: var(--green-section);
+}
+
+.right-column h3 {
+    color: var(--accent);
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.blue a,
+.green a,
+.experience a {
+    color: inherit;
+}
+
+.blue .date,
+.green .date,
+.experience .date {
+    color: inherit;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blue h3,
+.green h3,
+.experience h3 {
+    border-bottom: 0.15rem solid currentColor;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* ===============================
+   VERTICAL TITLE BLOCK
+================================ */
+
+.vertical-block {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.vertical-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0.6rem;
+    border-right: 2px solid #000;
+}
+
+.vertical-title h3 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.15rem;
+    font-size: 0.9rem;
+}
+
+.vertical-content {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-content ul {
+    padding-left: 0;
+}
+
+.vertical-content li {
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.vertical-title {
+    border-right: 2px solid #bbb;
+}
+
+/* ===============================
+   DESKTOP
+================================ */
+
+@media (min-width: 64rem) {
+
+    .cv-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-left {
+        width: 60%;
+    }
+
+    .header-right {
+        gap: 0.8rem;
+        display: flex;
+        width: 35%;
+        align-items: center;
+
+    }
+
+    .cv-content {
+        flex-direction: row;
+    }
+
+    .left-column {
+        width: 50%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-column {
+        width: 60%;
+    }
+}
